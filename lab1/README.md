@@ -33,8 +33,9 @@ And of course any farm needs workers to take care of the animals, so it was deci
 
 **Implementation & Explanation & Results**<br/>
 
-> The usage of all the patterns can be observed in the _index.ts_ file.
-> There, on row 5, we visit an empty farm with no animals, and thats what we get in the console<br/> > `Sorry, there are no animals yet`
+The usage of all the patterns can be observed in the _index.ts_ file.
+There, on row 5, we visit an empty farm with no animals, and thats what we get in the console<br/>
+`Sorry, there are no animals yet`
 
 In row 6 we call a function that populates the farm with a horse, with a hippogriff, and with something in-between.
 
