@@ -5,12 +5,12 @@
 The task is described [here](https://github.com/Wazea/SDTM-Labs/tree/master/Lab%231)
 
 **The author is**
-Plesca Anisoara-Ionela
-FAF-182
-Technical University of Moldova
+Plesca Anisoara-Ionela<br/>
+FAF-182<br/>
+Technical University of Moldova<br/>
 
 **Backstory**
-You go to a horse farm to see the horses.
+You go to a horse farm to see the horses.<br/>
 There are also some hippogriffs
 and people that take care of those animals.
 
@@ -35,21 +35,21 @@ And of course any farm needs workers to take care of the animals, so it was deci
 > Prototype is a creational design pattern that lets you copy existing objects without making your code dependent on their classes.
 > [credits](https://refactoring.guru/design-patterns/prototype)
 
-**Implementation & Explanation & Results**
+**Implementation & Explanation & Results**<br/>
 The usage of all the patterns can be observed in the _index.ts_ file.
-There, on row 5, we visit an empty farm with no animals, and thats what we get in the console
+There, on row 5, we visit an empty farm with no animals, and thats what we get in the console<br/>
 `Sorry, there are no animals yet`
 
 In row 6 we call a function that populates the farm with a horse, with a hippogriff, and with something in-between.
 
-Then, when we visit again the farm in row 7, we can see some animals being described
+Then, when we visit again the farm in row 7, we can see some animals being described<br/>
 `There is: A horse, with horse legs, with a horse head`
 
 `There is: A horse, with horse legs, with eagle claws, with an eagle head, with eagle wings`
 
 `There is: A horse, with eagle claws`
 
-After that, in row 9, someone is called to take care of the animals, and there are 2 people
+After that, in row 9, someone is called to take care of the animals, and there are 2 people<br/>
 
 `Elleanor is taking care of: A horse, with horse legs, with a horse head`
 
@@ -63,5 +63,5 @@ After that, in row 9, someone is called to take care of the animals, and there a
 
 `Alex is taking care of: A horse, with eagle claws`
 
-**Conclusions**
+**Conclusion**<br/>
 This lab really showed me that design patterns are useful, especially as we worked with the Object Pool pattern at our Network Programming course. So I think I will do that pattern for that course as it seems interesting.
