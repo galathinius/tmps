@@ -9,5 +9,6 @@ How to run the programs:
 
 1. be sure that typescript and node are installed on your machine
 2. in the command line run:
-   tsc <filename>.ts
-   node <filename>.js
+   `tsc *filename*.ts`
+3. then
+   `node *filename*.js`
