@@ -35,30 +35,30 @@ That Customer Service company by the name of _Facade_ also seems kinda shady, ho
 **Implementation & Explanation & Results**<br/>
 
 The Proxy pattern class is used in the client code, in the populate farm function, where a proxy is created and used to get animals<br/>
-`const proxy = new Proxy();`
+`const proxy = new Proxy();`<br/>
 `kindaHorse = proxy.getHippogriff();`
 
-Both Facade and Adapter objects are used in the Proxy class where a translated product is needed from the Facade, so the Adapter translates it.
-`this.facade = new Facade();`
-`this.adapter = new Adapter(this.facade);`
+Both Facade and Adapter objects are used in the Proxy class where a translated product is needed from the Facade, so the Adapter translates it.<br/>
+`this.facade = new Facade();`<br/>
+`this.adapter = new Adapter(this.facade);`<br/>
 
-The proxy is used to log all the requests
-`console.log("getting a horse");`
+The proxy is used to log all the requests<br/>
+`console.log("getting a horse");`<br/>
 
-And it can get a certain number of random animals, as seen in the client populate farm function
-`let kindaHorses = proxy.getAnimals(3);`
+And it can get a certain number of random animals, as seen in the client populate farm function<br/>
+`let kindaHorses = proxy.getAnimals(3);`<br/>
 <br/>
 
-The Facade is tasked with dealing with the breeder director and builders as seen in the _getHorse_ function
-`public getHorse(): string {`
-`this.director.setBreeder(this.builder);`
-`let kindaHorse: string;`
-`this.director.makeHorse();`
-`kindaHorse = this.builder.getProduct().listParts();`
-`return kindaHorse.split("").reverse().join("");`
-`}`
+The Facade is tasked with dealing with the breeder director and builders as seen in the _getHorse_ function<br/>
+`public getHorse(): string {`<br/>
+  `this.director.setBreeder(this.builder);`<br/>
+  `let kindaHorse: string;`<br/>
+  `this.director.makeHorse();`<br/>
+  `kindaHorse = this.builder.getProduct().listParts();`<br/>
+  `return kindaHorse.split("").reverse().join("");`<br/>
+`}`<br/>
 
-Unfortunately the Facade employs creatures from an outsourcing company, and their english isn't the best. Now the translator is needed, and it translates the result from the Facade into something comprehensible. For example the same getHorse method:
-`public getHorse(): string {`
-`return this.facade.getHorse().split("").reverse().join("");`
-`}`
+Unfortunately the Facade employs creatures from an outsourcing company, and their english isn't the best. Now the translator is needed, and it translates the result from the Facade into something comprehensible. For example the same getHorse method:<br/>
+`public getHorse(): string {`<br/>
+  `return this.facade.getHorse().split("").reverse().join("");`<br/>
+`}`<br/>
