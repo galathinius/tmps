@@ -4,6 +4,8 @@
 
 The task is described [here](https://github.com/Wazea/SDTM-Labs/tree/master/Lab%231)
 
+For general repo info and how to run the code, check the base [Readme](https://github.com/galathinius/tmps)
+
 **The author is**<br/>
 Plesca Anisoara-Ionela<br/>
 FAF-182<br/>
