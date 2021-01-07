@@ -1,7 +1,13 @@
+import { Observer } from "../behavioral/subscriber";
+
 export class HorseFarm {
   private static instance: HorseFarm;
 
   private constructor() {}
+
+  //
+  // creational patterns
+  // singleton
 
   public static goVisit(): HorseFarm {
     if (!HorseFarm.instance) {
@@ -37,5 +43,45 @@ export class HorseFarm {
 
   public addAnimals(animal) {
     this.animals.push(animal);
+    this.notify();
+  }
+
+  //
+  // behavioral patterns
+  // publisher
+
+  private observers: Observer[] = [];
+
+  /**
+   * The subscription management methods.
+   */
+  public attach(observer: Observer): void {
+    const observerIndex = this.observers.indexOf(observer);
+    if (observerIndex !== -1) {
+      return console.log("Subject: Observer has been attached already.");
+    }
+
+    console.log("Subject: Attached an observer.");
+    this.observers.push(observer);
+  }
+
+  public detach(observer: Observer): void {
+    const observerIndex = this.observers.indexOf(observer);
+    if (observerIndex === -1) {
+      return console.log("Subject: Nonexistent observer.");
+    }
+
+    this.observers.splice(observerIndex, 1);
+    console.log("Subject: Detached an observer.");
+  }
+
+  /**
+   * Trigger an update in each subscriber.
+   */
+  public notify(): void {
+    console.log("Subject: Notifying observers...");
+    for (const observer of this.observers) {
+      observer.update(this);
+    }
   }
 }

@@ -6,6 +6,7 @@ The tasks that needed to be done are described here:
 Links to tasks done:<br/>
 [First](https://github.com/galathinius/tmps/tree/master/creational)<br/>
 [Second](https://github.com/galathinius/tmps/tree/master/structural)<br/>
+[Third](https://github.com/galathinius/tmps/tree/master/behavioral)<br/>
 
 Everything will be done in TypeScript<br/>
 

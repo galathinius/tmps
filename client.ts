@@ -1,17 +1,27 @@
 import { HorseFarm } from "./creational/singleton";
 import { Prototype } from "./creational/prototype";
 import { Proxy } from "./structural/proxy";
+import { ConcreteObserver } from "./behavioral/subscriber";
 
 visitFarm();
+subscribeToFarm();
+
 populateFarm();
 visitFarm();
 
-takeCareOfFarm();
+// takeCareOfFarm();
 
 function visitFarm() {
   const s1 = HorseFarm.goVisit();
 
   s1.seeAnimals();
+}
+
+function subscribeToFarm() {
+  const s1 = HorseFarm.goVisit();
+  const observer = new ConcreteObserver();
+
+  s1.attach(observer);
 }
 
 function populateFarm() {
